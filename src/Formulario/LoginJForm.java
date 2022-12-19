@@ -16,6 +16,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Dialog.ModalExclusionType;
 
 public class LoginJForm extends JFrame {
 
@@ -43,8 +44,9 @@ public class LoginJForm extends JFrame {
 	 * Create the frame.
 	 */
 	public LoginJForm() {
+		setTitle("My Construction");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 381, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -52,20 +54,20 @@ public class LoginJForm extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Usuario");
-		lblNewLabel.setBounds(55, 87, 34, 13);
+		lblNewLabel.setBounds(55, 83, 69, 13);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Contraseña");
-		lblNewLabel_1.setBounds(37, 139, 52, 13);
+		lblNewLabel_1.setBounds(37, 135, 87, 13);
 		contentPane.add(lblNewLabel_1);
 		
 		txtUsuario = new JTextField();
-		txtUsuario.setBounds(162, 87, 96, 19);
+		txtUsuario.setBounds(162, 83, 96, 19);
 		contentPane.add(txtUsuario);
 		txtUsuario.setColumns(10);
 		
 		txtPass = new JPasswordField();
-		txtPass.setBounds(162, 139, 96, 19);
+		txtPass.setBounds(162, 135, 96, 19);
 		contentPane.add(txtPass);
 		
 		JButton btnNewButton = new JButton("Salir");
